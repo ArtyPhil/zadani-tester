@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "cypress": "^12.8.1"
+  },
+  "scripts": {
+    "test:cz": "cypress run --env currentDomain=cz",
+    "test:sk": "cypress run --env currentDomain=sk",
+    "test:com": "cypress run --env currentDomain=com",
+    "test:all": "npm run test:cz & npm run test:sk & npm run test:com"
   }
 }

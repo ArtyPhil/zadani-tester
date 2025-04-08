@@ -1,0 +1,29 @@
+{
+    // validní firmy
+
+    "company1": {
+      "name": "Alza.cz a.s.",
+      "ID": "27082440",
+      "VAT": "CZ27082440",
+      "telephone": "",
+      "email": "",
+      "web": "",
+      "address": "",
+      "town": "",
+      "addressID": "",
+      "country": "",
+    },
+
+    // nevalidni "custom" firmy
+
+    "company3": {
+      "name": "testName",
+      "ID": "testID",
+      "VAT": "testVAT"
+    },
+    "company4": {
+      "name": "1234",
+      "ID": "5678",
+      "VAT": "testVAT"
+    },
+}

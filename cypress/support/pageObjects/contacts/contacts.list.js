@@ -16,28 +16,28 @@ class ContactsList {
     findContact(companies) {
         cy.get(this.findInput).type(companies).wait(500);
     }
-    
-    validateSearchResult(companies){
+
+    validateSearchResult(companies) {
         cy.contains('tr.el-table_row', companies).eq().should('exist');
     }
 
-    clickEditContact(companies){
+    clickEditContact(companies) {
         cy.contains('tr.el-table_row', companies).find(this.editButton).eq(0).click();
     }
 
-    clickDeleteContact(companies){
+    clickDeleteContact(companies) {
         cy.contains('tr.el-table_row', companies).find(this.deleteButton).eq(0).click();
     }
 
-    clickCreateExpense(companies){
+    clickCreateExpense(companies) {
         cy.contains('tr.el-table_row', companies).find(this.createExpenseButton).eq(0).click();
     }
 
-    clickConfirmDelete(){
+    clickConfirmDelete() {
         cy.get(this.cancleDeleteButton).click();
     }
 
-    clickCancleDelete(){
+    clickCancleDelete() {
         cy.get(cancleDeleteButton).click();
     }
 }

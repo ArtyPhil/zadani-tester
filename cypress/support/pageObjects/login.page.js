@@ -6,8 +6,8 @@ class LoginPage {
         this.submitButton = 'button[data-analytics-id="button.login"]';
         this.loginButton = 'button[data-analytics-id="signIn.v2.login"]';
     }
-    
-    getLoginFirstTime(){
+
+    getLoginFirstTime() {
         cy.get(this.loginButton);
     }
 
